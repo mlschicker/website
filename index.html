@@ -2,15 +2,245 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Your Name - Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maximiian Schicker | Portfolio</title>
+  <!-- Google Fonts (example) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="https://kit.fontawesome.com/8adc4d7797.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
-</body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#hero"><strong>Maximilian Schicker</strong></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-</html>
+  <!-- Hero / Landing Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Max</span>.</h1>
+
+      <pre style="font-family: 'Courier New', Courier, monospace;">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣔⣝⠮⠾⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⢀⠰⡨⡯⠊⠀⠀⠀⢰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⢲⢤⢤⢄⣀⠀⠀⠀⠀⠀⠀⠀⠠⡒⢕⠴⣁⡀⢀⢴⢱⢑⡕⠁⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡗⠉⠉⠘⠣⢗⡌⢎⢲⢤⢄⡠⡰⡩⡊⢆⢣⠺⡐⡍⡣⡛⡜⡈⡁⠒⡐⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⢈⠧⣣⠗⢕⠱⡨⢢⠱⡡⢅⢣⠱⡘⡔⡅⡣⡩⡒⣜⠒⢄⠀⢰⠀⠀⠀⠀           
+⠀⠀⠀⠀⠀⠀⠸⡀⠀⠀⠰⣊⠁⡠⢇⠣⡣⡑⡅⡣⡱⡘⡌⢆⢣⠱⡨⢢⢃⡎⡌⢆⠧⡸⠀⠎⠀⠀⠀⠀           
+⠀⠀⠀⠀⠀⠀⠀⠡⡀⠀⢀⠔⢡⠕⡅⢇⠪⡢⢱⠨⡢⡱⡘⡌⢆⢣⠱⡡⡃⢎⠇⡕⡑⡕⡌⠀⠀              
+⠀⠀⠀⠀⠀⠀⠀⠀⠑⡄⠘⣀⡇⢇⢎⠮⡩⡊⢆⢣⠱⡐⢕⠸⡨⢢⠣⢪⣘⡔⡑⡅⡕⡌⢎⠦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠢⢰⢸⢐⢅⢣⠱⣘⡌⢆⢣⢱⢡⡣⡕⡅⡣⢳⣻⣞⡎⢆⠕⡌⡕⢜⠐⢉⠝⢡⢤⢤⢲⣄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡆⡣⡊⢆⠕⢵⣻⣽⡎⢆⠕⠁⣥⠅⠈⠊⠪⠓⡫⢣⢑⠕⠌⠊⠈⠚⠓⣆⣌⢧⠁⠁⡥⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠪⣊⠆⡕⢅⢣⢙⢚⢓⠕⠡⢀⣠⣞⣷⣲⡖⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣜⠱⡸⡕⣇⢤⢣⠯⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠑⠢⠬⡴⠉⠘⠈⠂⠃⠁⠀⠀⠀⠀⠱⡷⣳⣳⠃⠀⠀⠀⠀⠀⠀⠀⠀⢠⢎⠆⡇⢆⢓⡵⠉⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠓⠋⠀⠀⠀⠀⠀⠀⠀⡤⡜⢕⠅⡕⣌⢮⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣪⢤⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢀⣄⠴⠚⢹⢨⡊⣆⢧⣳⠕⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⣎⢗⢧⡣⡯⡆⠦⠴⠤⠦⠴⠄⠒⠓⠈⠉⠁⠀⠀⡀⡷⡱⣕⠵⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠛⠚⠹⠞⠚⠙⠑⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣸⠉⠉⠁⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢢⢣⠀⡀⠀⠀⠀⠀⢀⢰⡨⠊⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠉⠂⠵⢅⣄⣂⠤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      </pre>
+
+      <h3>I like learning new things.</h3>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I'm passionate about mathematics - especially optimization and discrete mathematics.
+        Currently, I'm working on my master's thesis in the field of optimization.
+      </p>
+      <p>
+        I like to work on projects that involve mathematical modeling and software development.
+      </p>
+    </div>
+    <div class="about-photo">
+      <!-- Replace with your own profile image -->
+      <img src="images/profile_picture.jpg" alt="Profile Photo" />
+    </div>
+  </section>
+
+
+
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Oct 2024 - Mar 2025</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Research Assistant</h3>
+          <p>National University of Singapore - Singapore</p>
+          <!-- <ul>
+            <li>Modelling real-world problems.</li>
+            <li>Collaborated with cross-functional teams to implement features.</li>
+            <li>Optimized website performance and user experience.</li>
+          </ul> -->
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Mar 2024 - Ongoing</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Student Research Assistant</h3>
+          <p>Zuse Institute Berlin - Berlin</p>
+          <!-- <ul>
+            <li>Working with different solvers.</li>
+            <li>Modelling LPs and QUBOs.</li>
+          </ul> -->
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Jul 2020 - Ongoing</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Founder & CEO</h3>
+          <p>Alster Systems UG (haftungsbeschränkt) - Kaltenkirchen</p>
+          <!-- <ul>
+            <li>Developing management software for schools.</li>
+            <li>Managing legal relations.</li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Sep 2025</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Master of Science in Mathematics</h3>
+          <p>Technische Universität Berlin - Berlin</p>
+          <ul>
+            <li>Specialized in Algorithms and Discrete Mathematics</li>
+            <li>Overall Grade: -</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <span>Sep 2023</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Bachelor of Science in Mathematics</h3>
+            <p>Technische Universität Berlin - Berlin</p>
+            <ul>
+              <li>Specialized in Algorithms and Discrete Mathematics</li>
+              <li>Thesis: "Competitive Algorithms for Non-Clairvoyant Scheduling with Lossy Preemption" (Grade: 1.0)
+              </li>
+              <li>Overall Grade: 1.8</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <span>Jul 2020</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Abitur</h3>
+            <p>Alstergymnasium Henstedt-Ulzburg - Henstedt-Ulzburg</p>
+            <ul>
+              <li>Physics Profile</li>
+              <li>Overall Grade: 1.5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Work / Projects Section -->
+  <!-- <section id="work" class="work-section">
+    <h2>My Work</h2>
+    <div class="work-grid">
+      <div class="work-item">
+        <img src="https://via.placeholder.com/400" alt="Project 1" />
+        <h3>Project Title</h3>
+        <p>Short description of your project, tools used, etc.</p>
+      </div>
+      <div class="work-item">
+        <img src="https://via.placeholder.com/400" alt="Project 2" />
+        <h3>Project Title</h3>
+        <p>Short description of your project, tools used, etc.</p>
+      </div>
+  </div>
+  </section> -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>
+      Feel free to reach out if you want to collaborate on a project or just say hi.
+    </p>
+    <p>
+      Email: <a href="mailto:ml.schicker@outlook.com">ml.schicker@outlook.com</a>
+    </p>
+    <!-- Or you can add a contact form, social links, etc. -->
+  </section>
+
+  <div class="contact-container">
+    <a href="https://github.com/mlschicker" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/maximilian-schicker-5089122aa/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:ml.schicker@outlook.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://schicker.org" target="_blank">
+      <i class="fas fa-globe"></i>
+    </a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Maximilian Schicker. All Rights Reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const yearSpan = document.createElement('span');
+      yearSpan.textContent = new Date().getFullYear();
+      document.querySelector('.footer p').appendChild(yearSpan);
+    });
+  </script>
+
+</body>
 
 </html>
