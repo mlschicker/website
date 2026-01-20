@@ -1,0 +1,127 @@
+/* Impressum Page Specific Styles */
+
+.impressum-section {
+    min-height: calc(100vh - 200px);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.impressum-container {
+    max-width: 900px;
+    width: 100%;
+    background-color: var(--foreground-color);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+[data-theme="light"] .impressum-container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.impressum-container h1 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.impressum-subtitle {
+    color: var(--text-tertiary);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+}
+
+.impressum-content {
+    line-height: 1.8;
+}
+
+.impressum-content h2 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.impressum-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.impressum-content p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.impressum-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.impressum-content a:hover {
+    color: var(--accent-color-light);
+    text-decoration: underline;
+}
+
+.impressum-content strong {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.back-link {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--text-dark);
+    text-align: center;
+}
+
+.back-link .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.back-link .btn:hover {
+    background-color: var(--accent-color-light);
+    transform: translateX(-5px);
+}
+
+/* Responsive Design for Impressum */
+@media (max-width: 768px) {
+    .impressum-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .impressum-container h1 {
+        font-size: 2rem;
+    }
+
+    .impressum-content h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .impressum-section {
+        padding: 2rem 1rem;
+    }
+
+    .impressum-container {
+        padding: 1.5rem;
+    }
+
+    .impressum-container h1 {
+        font-size: 1.8rem;
+    }
+}
