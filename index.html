@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Your Name - Portfolio" />
+  <meta name="description"
+    content="Maximilian Schicker - Mathematics Graduate Student specializing in Optimization and Algorithms" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maximiian Schicker | Portfolio</title>
+  <title>Maximilian Schicker | Mathematics & Optimization Research</title>
   <!-- Google Fonts (example) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
@@ -25,8 +26,13 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#conferences">Conferences</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
   </header>
 
@@ -57,8 +63,10 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠉⠂⠵⢅⣄⣂⠤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
       </pre>
 
-      <h3>I like learning new things.</h3>
-      <a href="#about" class="btn">Learn More</a>
+      <!-- <h3>Transforming complex problems into elegant mathematical solutions.</h3> -->
+      <a href="#about" class="scroll-down-arrow" aria-label="Scroll to About section">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </div>
   </section>
 
@@ -67,16 +75,19 @@
     <div class="about-text">
       <h2>About Me</h2>
       <p>
-        I'm passionate about mathematics - especially optimization and discrete mathematics.
-        Currently, I'm working on my master's thesis in the field of optimization.
+        I'm a mathematics graduate student specializing in algorithms, discrete mathematics, and optimization. Currently
+        pursuing a Master's degree at Technische Universität Berlin, I focus on mathematical modeling, algorithm design,
+        and computational problem-solving.
       </p>
       <p>
-        I like to work on projects that involve mathematical modeling and software development.
+        My research interests lie at the intersection of theoretical mathematics and practical applications,
+        particularly in optimization, scheduling algorithms, and combinatorial problems. I contribute to open-source
+        projects and collaborate with research institutions to advance computational mathematics.
       </p>
     </div>
     <div class="about-photo">
       <!-- Replace with your own profile image -->
-      <img src="images/profile_picture.jpg" alt="Profile Photo" />
+      <img src="images/profile_picture_new.jpeg" alt="Profile Photo" />
     </div>
   </section>
 
@@ -88,30 +99,17 @@
     <div class="timeline-container">
       <div class="timeline-item">
         <div class="timeline-date">
-          <span>Oct 2024 - Mar 2025</span>
-        </div>
-        <div class="timeline-content">
-          <h3>Research Assistant</h3>
-          <p>National University of Singapore - Singapore</p>
-          <!-- <ul>
-            <li>Modelling real-world problems.</li>
-            <li>Collaborated with cross-functional teams to implement features.</li>
-            <li>Optimized website performance and user experience.</li>
-          </ul> -->
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">
           <span>Mar 2024 - Ongoing</span>
         </div>
         <div class="timeline-content">
           <h3>Student Research Assistant</h3>
-          <p>Zuse Institute Berlin - Berlin</p>
-          <!-- <ul>
-            <li>Working with different solvers.</li>
-            <li>Modelling LPs and QUBOs.</li>
-          </ul> -->
+          <p><a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a> - Berlin</p>
+          <ul>
+            <li>Key contributor to "Quantum Optimization Benchmarking Library – The Intractable Decathlon" project</li>
+            <li>Implemented and analyzed classical baselines for optimization algorithm benchmarking</li>
+            <li>Collaborated with IBM and international research partners</li>
+            <li>Participated in IBM internal workshop in Liverpool for future research planning</li>
+          </ul>
         </div>
       </div>
 
@@ -120,12 +118,30 @@
           <span>Jul 2020 - Ongoing</span>
         </div>
         <div class="timeline-content">
-          <h3>Founder & CEO</h3>
-          <p>Alster Systems UG (haftungsbeschränkt) - Kaltenkirchen</p>
-          <!-- <ul>
-            <li>Developing management software for schools.</li>
-            <li>Managing legal relations.</li>
-          </ul> -->
+          <h3>CEO</h3>
+          <p><a href="https://alster-systems.de/" target="_blank">Alster Systems UG (haftungsbeschränkt)</a> -
+            Kaltenkirchen</p>
+          <ul>
+            <li>Managing customer and employee relations</li>
+            <li>Front-End development of digital class register software for schools</li>
+            <li>Managing accounting and finance</li>
+            <li>Led integration process at multiple schools in Henstedt-Ulzburg region</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Oct 2024 - Mar 2025</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Research Assistant</h3>
+          <p><a href="https://www.nus.edu.sg/" target="_blank">National University of Singapore</a> - Singapore</p>
+          <ul>
+            <li>Developed and applied Optimal Decision Trees for modeling complex financial relationships</li>
+            <li>Applied optimization techniques in financial contexts</li>
+            <li>Presented preliminary results at MODAL Berlin Algorithmic Intelligence Workshop 2025</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -138,79 +154,148 @@
     <div class="timeline-container">
       <div class="timeline-item">
         <div class="timeline-date">
-          <span>Sep 2025</span>
+          <span>Sep 2023 - Present</span>
         </div>
         <div class="timeline-content">
-          <h3>Master of Science in Mathematics (Ongoing)</h3>
-          <p>Technische Universität Berlin - Berlin</p>
+          <h3>Master of Science in Mathematics</h3>
+          <p><a href="https://www.tu.berlin/" target="_blank">Technische Universität Berlin</a> - Berlin</p>
           <ul>
-            <li>Specialized in Algorithms and Discrete Mathematics</li>
-            <li>Overall Grade: -</li>
+            <li>Specialization in Algorithms and Discrete Mathematics</li>
+            <li>Focus on Optimization Theory and Computational Methods</li>
           </ul>
         </div>
       </div>
 
-      <div class="timeline-container">
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <span>Sep 2023</span>
-          </div>
-          <div class="timeline-content">
-            <h3>Bachelor of Science in Mathematics</h3>
-            <p>Technische Universität Berlin - Berlin</p>
-            <ul>
-              <li>Specialized in Algorithms and Discrete Mathematics</li>
-              <li>Thesis: "Competitive Algorithms for Non-Clairvoyant Scheduling with Lossy Preemption" (Grade: 1.0)
-              </li>
-              <li>Overall Grade: 1.8</li>
-            </ul>
-          </div>
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>2020 - 2023</span>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <span>Jul 2020</span>
-          </div>
-          <div class="timeline-content">
-            <h3>Abitur</h3>
-            <p>Alstergymnasium Henstedt-Ulzburg - Henstedt-Ulzburg</p>
-            <ul>
-              <li>Physics Profile</li>
-              <li>Overall Grade: 1.5</li>
-            </ul>
-          </div>
+        <div class="timeline-content">
+          <h3>Bachelor of Science in Mathematics</h3>
+          <p><a href="https://www.tu.berlin/" target="_blank">Technische Universität Berlin</a> - Berlin</p>
+          <ul>
+            <li>Specialization in Algorithms and Discrete Mathematics</li>
+            <li>Bachelor Thesis: "Competitive Algorithms for Non-Clairvoyant Scheduling with Lossy Preemption" (Grade:
+              1.0)
+            </li>
+            <li>Overall Grade: 1.8 (German grading system: 1.0 is highest)</li>
+          </ul>
         </div>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>2012 - 2020</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Abitur (University Entrance Qualification)</h3>
+          <p><a href="https://alstergymnasium.de/" target="_blank">Alstergymnasium Henstedt-Ulzburg</a> -
+            Henstedt-Ulzburg</p>
+          <ul>
+            <li>Physics Profile</li>
+            <li>Overall Grade: 1.5</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
   </section>
 
-  <!-- Work / Projects Section -->
-  <!-- <section id="work" class="work-section">
-    <h2>My Work</h2>
-    <div class="work-grid">
-      <div class="work-item">
-        <img src="https://via.placeholder.com/400" alt="Project 1" />
-        <h3>Project Title</h3>
-        <p>Short description of your project, tools used, etc.</p>
+  <!-- Publications Section -->
+  <section id="publications" class="publications-section">
+    <h2>Publications & Research</h2>
+
+    <div class="publication-list">
+      <div class="publication-item">
+        <h3>Quantum Optimization Benchmarking Library – The Intractable Decathlon</h3>
+        <p class="publication-authors">Thorsten Koch, David E. Bernal Neira, Ying Chen, Giorgio Cortiana, Daniel J.
+          Egger, Raoul Heese, Narendra N. Hegade, Alejandro Gomez Cadavid, Rhea Huang, Toshinari Itoko, Thomas Kleinert,
+          Pedro Maciel Xavier, Naeimeh Mohseni, Jhon A. Montanez-Barrera, Koji Nakano, Giacomo Nannicini, Corey O'Meara,
+          Justin Pauckert, Manuel Proissl, Anurag Ramesh, <strong>Maximilian Schicker</strong>, Noriaki Shimada,
+          Mitsuharu Takeori, Victor Valls, David Van Bulck, Stefan Woerner, and Christa Zoufal</p>
+        <p class="publication-venue">arXiv preprint, 2025</p>
+        <p class="publication-description">
+          A comprehensive benchmarking library for optimization algorithms, creating a "decathlon" for optimization
+          methods with realistic benchmarks on particularly hard combinatorial problems. The project involves systematic
+          analysis and comparison of modern optimization methods across a broad collection of challenging problems, in
+          collaboration with IBM and international research partners.
+        </p>
+        <div class="publication-links">
+          <a href="https://arxiv.org/abs/2504.03832" target="_blank" class="btn-small">Preprint on arXiv</a>
+          <a href="https://github.com/ZIB-AOPT/QOBLIB" target="_blank" class="btn-small">GitHub Repository</a>
+        </div>
       </div>
-      <div class="work-item">
-        <img src="https://via.placeholder.com/400" alt="Project 2" />
-        <h3>Project Title</h3>
-        <p>Short description of your project, tools used, etc.</p>
+
+      <div class="publication-item">
+        <h3>Bachelor Thesis: Competitive Algorithms for Non-Clairvoyant Scheduling with Lossy Preemption</h3>
+        <p class="publication-authors">Maximilian Schicker</p>
+        <p class="publication-venue"><a href="https://www.tu.berlin/" target="_blank">Technische Universität Berlin</a>,
+          2023</p>
+        <p class="publication-description">
+          Analysis and development of competitive algorithms for scheduling problems where job durations are unknown and
+          preemption incurs cost. Thesis completed under the supervision of Prof. Dr. Max Klimm. Achieved grade 1.0.
+        </p>
       </div>
-  </div>
-  </section> -->
+    </div>
+  </section>
+
+  <!-- Conferences & Workshops Section -->
+  <section id="conferences" class="conferences-section">
+    <h2>Conferences & Workshops</h2>
+
+    <div class="publication-list">
+      <div class="publication-item">
+        <h3>MODAL Berlin Algorithmic Intelligence Workshop 2025</h3>
+        <p class="publication-venue"><a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a>, June 2025
+        </p>
+        <p class="publication-description">
+          Presented preliminary research results on Optimal Decision Trees in financial optimization. Engaged in
+          scientific discussions leading to new ideas and potential collaborations.
+        </p>
+        <div class="publication-links">
+          <a href="https://zib.de/other/ai2025workshop/" target="_blank" class="btn-small">Workshop Website</a>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <h3>Quantum Optimization Working Group Meeting 2025</h3>
+        <p class="publication-venue">IBM & <a href="https://www.liverpool.ac.uk/" target="_blank">University of
+            Liverpool</a>, April 2025</p>
+        <p class="publication-description">
+          Participated in IBM's internal workshop focused on developing new ideas for upcoming research projects in
+          quantum optimization. Gained valuable insights into scientific collaboration and established new contacts in
+          the research community.
+        </p>
+      </div>
+
+      <div class="publication-item">
+        <h3>CO@Work 2024 Summer School</h3>
+        <p class="publication-venue"><a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a>, Summer
+          2024</p>
+        <p class="publication-description">
+          Intensive summer school on Combinatorial Optimization with over 40 lectures from renowned researchers from
+          academia and industry.
+          Additionally served as volunteer helper, including photography and participant group coordination during the
+          industry excursion.
+        </p>
+        <div class="publication-links">
+          <a href="https://co-at-work.zib.de/" target="_blank" class="btn-small">Summer School Website</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
+    <h2>Get In Touch</h2>
     <p>
-      Feel free to reach out if you want to collaborate on a project or just say hi.
+      I'm always interested in discussing research collaborations, optimization problems, or new opportunities in
+      mathematics and software development.
     </p>
-    <p>
-      Email: <a href="mailto:ml.schicker@outlook.com">ml.schicker@outlook.com</a>
-    </p>
-    <!-- Or you can add a contact form, social links, etc. -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:ml.schicker@outlook.com">ml.schicker@outlook.com</a></p>
+      <p><strong>Location:</strong> Berlin, Germany</p>
+    </div>
   </section>
 
   <div class="contact-container">
@@ -231,14 +316,51 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Maximilian Schicker. All Rights Reserved.</p>
+    <p>© 2025 - YEAR Maximilian Schicker. All Rights Reserved.</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const yearSpan = document.createElement('span');
-      yearSpan.textContent = new Date().getFullYear();
-      document.querySelector('.footer p').appendChild(yearSpan);
+      const footerText = document.querySelector('.footer p');
+      footerText.textContent = footerText.textContent.replace('YEAR', new Date().getFullYear());
     });
+
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    const themeIcon = themeToggle.querySelector('i');
+
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    let currentTheme;
+
+    if (savedTheme) {
+      currentTheme = savedTheme;
+    } else {
+      // Default to system preference
+      currentTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+
+    htmlElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+
+    themeToggle.addEventListener('click', function () {
+      const theme = htmlElement.getAttribute('data-theme');
+      const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      if (theme === 'dark') {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+    }
   </script>
 
 </body>
