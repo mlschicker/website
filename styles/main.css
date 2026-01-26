@@ -131,7 +131,7 @@ h3 {
 }
 
 .theme-toggle:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 /* Hero Section */
@@ -177,6 +177,48 @@ h3 {
 .btn:hover {
   background-color: var(--accent-color-light);
   color: var(--background-color);
+}
+
+/* Scroll Down Arrow */
+.scroll-down-arrow {
+  display: flex;
+  margin: 2rem auto 0;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down-arrow:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  transform: translateY(5px);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 /* About Section */
@@ -281,8 +323,10 @@ h3 {
 
 section {
   width: 60%;
+  max-width: 1500px;
   margin: auto;
   padding: 3rem 1rem;
+  margin-bottom: 4rem;
 }
 
 /* Alternating section backgrounds for visual hierarchy */
@@ -290,12 +334,17 @@ section {
   background-color: var(--foreground-color);
   border-radius: 12px;
   padding: 4rem 2rem;
+  margin-bottom: 4rem;
   transition: background-color 0.3s ease;
 }
 
 .experience h2 {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.education {
+  margin-bottom: 4rem;
 }
 
 .education h2 {
@@ -520,7 +569,7 @@ a {
   background-color: var(--background-color);
   padding: 2rem;
   border-radius: 8px;
-  border-left: 4px solid var(--accent-color);
+  /* border-left: 4px solid var(--accent-color); */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -604,7 +653,7 @@ a {
 /* ===================================== */
 
 /* Medium screens (tablet) */
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
   body {
     line-height: 1.4;
   }
@@ -668,7 +717,7 @@ a {
 }
 
 /* Small screens (mobile) */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .navbar {
     padding: 1rem 5%;
     flex-direction: row;
@@ -686,7 +735,7 @@ a {
   }
 
   .hero-content pre {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   /* About Section single column */
@@ -756,6 +805,7 @@ a {
   section {
     width: 90%;
     padding: 2rem 1rem;
+    margin-bottom: 4rem;
   }
 
   /* Contact Container can be smaller or hidden */
