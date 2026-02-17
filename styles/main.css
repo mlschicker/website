@@ -521,21 +521,35 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-/* Hover color overrides (as examples) */
+/* Hover color overrides for brand colors */
 .contact-container a:nth-child(1):hover {
   color: #333;
+  /* GitHub */
 }
 
 .contact-container a:nth-child(2):hover {
   color: #0077b5;
+  /* LinkedIn */
 }
 
 .contact-container a:nth-child(3):hover {
-  color: #c71610;
+  color: #A6CE39;
+  /* ORCID */
 }
 
 .contact-container a:nth-child(4):hover {
+  color: #4285F4;
+  /* Google Scholar */
+}
+
+.contact-container a:nth-child(5):hover {
+  color: #c71610;
+  /* Email */
+}
+
+.contact-container a:nth-child(6):hover {
   color: var(--accent-color);
+  /* Website */
 }
 
 .contact-container a:hover {
