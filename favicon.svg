@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fox face in 11x11 dot matrix -->
+  
+  <!-- Row 0 - Ear tips -->
+  <circle cx="2.5" cy="1.5" r="0.4" fill="#fda900"/>
+  <circle cx="8.5" cy="1.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 1 - Ears with inner white -->
+  <circle cx="2.5" cy="2.5" r="0.4" fill="#fda900"/>
+  <circle cx="3.5" cy="2.5" r="0.4" fill="#ffffff"/>
+  <circle cx="7.5" cy="2.5" r="0.4" fill="#ffffff"/>
+  <circle cx="8.5" cy="2.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 2 - Top of head -->
+  <circle cx="2.5" cy="3.5" r="0.4" fill="#fda900"/>
+  <circle cx="3.5" cy="3.5" r="0.4" fill="#fda900"/>
+  <circle cx="4.5" cy="3.5" r="0.4" fill="#fda900"/>
+  <circle cx="5.5" cy="3.5" r="0.4" fill="#fda900"/>
+  <circle cx="6.5" cy="3.5" r="0.4" fill="#fda900"/>
+  <circle cx="7.5" cy="3.5" r="0.4" fill="#fda900"/>
+  <circle cx="8.5" cy="3.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 3 - Upper face white patch -->
+  <circle cx="1.5" cy="4.5" r="0.4" fill="#fda900"/>
+  <circle cx="2.5" cy="4.5" r="0.4" fill="#fda900"/>
+  <circle cx="3.5" cy="4.5" r="0.4" fill="#ffffff"/>
+  <circle cx="4.5" cy="4.5" r="0.4" fill="#ffffff"/>
+  <circle cx="5.5" cy="4.5" r="0.4" fill="#ffffff"/>
+  <circle cx="6.5" cy="4.5" r="0.4" fill="#ffffff"/>
+  <circle cx="7.5" cy="4.5" r="0.4" fill="#ffffff"/>
+  <circle cx="8.5" cy="4.5" r="0.4" fill="#fda900"/>
+  <circle cx="9.5" cy="4.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 4 - Eyes (wider apart) -->
+  <circle cx="0.5" cy="5.5" r="0.4" fill="#fda900"/>
+  <circle cx="1.5" cy="5.5" r="0.4" fill="#fda900"/>
+  <circle cx="2.5" cy="5.5" r="0.4" fill="#fda900"/>
+  <circle cx="3.5" cy="5.5" r="0.4" fill="#000000"/>
+  <circle cx="4.5" cy="5.5" r="0.4" fill="#ffffff"/>
+  <circle cx="5.5" cy="5.5" r="0.4" fill="#ffffff"/>
+  <circle cx="6.5" cy="5.5" r="0.4" fill="#ffffff"/>
+  <circle cx="7.5" cy="5.5" r="0.4" fill="#000000"/>
+  <circle cx="8.5" cy="5.5" r="0.4" fill="#fda900"/>
+  <circle cx="9.5" cy="5.5" r="0.4" fill="#fda900"/>
+  <circle cx="10.5" cy="5.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 5 - Mid face -->
+  <circle cx="1.5" cy="6.5" r="0.4" fill="#fda900"/>
+  <circle cx="2.5" cy="6.5" r="0.4" fill="#fda900"/>
+  <circle cx="3.5" cy="6.5" r="0.4" fill="#ffffff"/>
+  <circle cx="4.5" cy="6.5" r="0.4" fill="#ffffff"/>
+  <circle cx="5.5" cy="6.5" r="0.4" fill="#ffffff"/>
+  <circle cx="6.5" cy="6.5" r="0.4" fill="#ffffff"/>
+  <circle cx="7.5" cy="6.5" r="0.4" fill="#ffffff"/>
+  <circle cx="8.5" cy="6.5" r="0.4" fill="#fda900"/>
+  <circle cx="9.5" cy="6.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 6 - Lower face -->
+  <circle cx="2.5" cy="7.5" r="0.4" fill="#fda900"/>
+  <circle cx="3.5" cy="7.5" r="0.4" fill="#fda900"/>
+  <circle cx="4.5" cy="7.5" r="0.4" fill="#ffffff"/>
+  <circle cx="5.5" cy="7.5" r="0.4" fill="#ffffff"/>
+  <circle cx="6.5" cy="7.5" r="0.4" fill="#ffffff"/>
+  <circle cx="7.5" cy="7.5" r="0.4" fill="#fda900"/>
+  <circle cx="8.5" cy="7.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 7 - Muzzle -->
+  <circle cx="3.5" cy="8.5" r="0.4" fill="#fda900"/>
+  <circle cx="4.5" cy="8.5" r="0.4" fill="#fda900"/>
+  <circle cx="5.5" cy="8.5" r="0.4" fill="#fda900"/>
+  <circle cx="6.5" cy="8.5" r="0.4" fill="#fda900"/>
+  <circle cx="7.5" cy="8.5" r="0.4" fill="#fda900"/>
+  
+  <!-- Row 8 - Nose -->
+  <circle cx="4.5" cy="9.5" r="0.4" fill="#fda900"/>
+  <circle cx="5.5" cy="9.5" r="0.4" fill="#000000"/>
+  <circle cx="6.5" cy="9.5" r="0.4" fill="#fda900"/>
+</svg>
