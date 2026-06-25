@@ -3,15 +3,68 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description"
-    content="Maximilian Schicker - Mathematics Graduate Student specializing in Optimization and Algorithms" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maximilian Schicker | Mathematics & Optimization Research</title>
+  <title>Maximilian Schicker | Optimization & Algorithms</title>
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Maximilian Schicker — PhD researcher at Zuse Institute Berlin and IBM Research Zürich, working on combinatorial optimization, algorithm design, and quantum optimization." />
+  <meta name="author" content="Maximilian Schicker" />
+  <meta name="keywords"
+    content="Maximilian Schicker, combinatorial optimization, quantum optimization, algorithm design, scheduling theory, discrete mathematics, ZIB, IBM Research, mathematics, PhD" />
+  <link rel="canonical" href="https://schicker.org" />
+
+  <!-- Open Graph (link previews on LinkedIn, Slack, iMessage, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://schicker.org" />
+  <meta property="og:title" content="Maximilian Schicker | Optimization & Algorithms" />
+  <meta property="og:description"
+    content="PhD researcher at Zuse Institute Berlin and IBM Research Zürich, working on combinatorial optimization, algorithm design, and quantum optimization." />
+  <meta property="og:image" content="https://schicker.org/images/og-image.png" />
+  <meta property="og:site_name" content="Maximilian Schicker" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Maximilian Schicker | Optimization & Algorithms" />
+  <meta name="twitter:description"
+    content="PhD researcher at Zuse Institute Berlin and IBM Research Zürich, working on combinatorial optimization, algorithm design, and quantum optimization." />
+  <meta name="twitter:image" content="https://schicker.org/images/og-image.png" />
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <!-- Google Fonts (example) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Maximilian Schicker",
+    "url": "https://schicker.org",
+    "image": "https://schicker.org/images/og-image.png",
+    "jobTitle": "PhD Researcher",
+    "description": "PhD researcher at Zuse Institute Berlin and IBM Research Zürich, working on combinatorial optimization, algorithm design, and quantum optimization.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Zuse Institute Berlin",
+      "url": "https://www.zib.de/"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Technische Universität Berlin",
+      "url": "https://www.tu.berlin/"
+    },
+    "sameAs": [
+      "https://github.com/mlschicker",
+      "https://www.linkedin.com/in/maximilian-schicker-5089122aa/",
+      "https://orcid.org/0009-0008-8939-7791",
+      "https://scholar.google.com/citations?user=H9sqlS0AAAAJ"
+    ]
+  }
+  </script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="styles/main.css" />
   <script src="https://kit.fontawesome.com/8adc4d7797.js" crossorigin="anonymous"></script>
@@ -26,6 +79,7 @@
       </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#publications">Publications</a></li>
@@ -40,6 +94,7 @@
 
   <!-- Hero / Landing Section -->
   <section id="hero" class="hero-section">
+    <canvas id="hero-bg"></canvas>
     <div class="hero-content">
       <h1>Hello, I'm <span>Max</span>.</h1>
 
@@ -65,7 +120,7 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠉⠂⠵⢅⣄⣂⠤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
       </pre>
 
-      <!-- <h3>Transforming complex problems into elegant mathematical solutions.</h3> -->
+      <p class="hero-tagline">PhD Researcher · Optimization & Algorithms</p>
       <a href="#about" class="scroll-down-arrow" aria-label="Scroll to About section">
         <i class="fas fa-chevron-down"></i>
       </a>
@@ -77,14 +132,13 @@
     <div class="about-text">
       <h2>About Me</h2>
       <p>
-        I'm a mathematics graduate student specializing in algorithms, discrete mathematics, and optimization. Currently
-        pursuing a Master's degree at Technische Universität Berlin, I focus on mathematical modeling, algorithm design,
-        and computational problem-solving.
-      </p>
-      <p>
-        My research interests lie at the intersection of theoretical mathematics and practical applications,
-        particularly in optimization, scheduling algorithms, and combinatorial problems. I contribute to open-source
-        projects and collaborate with research institutions to advance computational mathematics.
+        I'm a PhD researcher at <a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a> and Research
+        Scientist Intern at <a href="https://research.ibm.com/labs/zurich" target="_blank">IBM Research Zürich</a>.
+        Optimization drew me in because of the tension at its core — problems that are provably intractable in the
+        worst case, yet often surprisingly solvable in practice. I work on combinatorial problems, algorithm design,
+        and quantum optimization, collaborating with researchers across academia and industry. I also run a software
+        company I founded at 18, which taught me that the hardest optimization problems rarely come with a clean
+        objective function.
       </p>
     </div>
     <div class="about-photo">
@@ -95,39 +149,49 @@
 
 
 
+  <!-- Research Interests Section -->
+  <section id="research" class="research-section">
+    <h2>Research Interests</h2>
+    <ul class="research-list">
+      <li>Combinatorial Optimization</li>
+      <li>Quantum Optimization</li>
+      <li>Algorithm Design & Analysis</li>
+      <li>Scheduling Theory</li>
+      <li>Discrete Mathematics</li>
+      <li>Mathematical Programming</li>
+    </ul>
+  </section>
+
   <section id="experience" class="experience">
     <h2>Experience</h2>
 
     <div class="timeline-container">
-      <div class="timeline-item">
+      <div class="timeline-item ongoing-item">
         <div class="timeline-date">
-          <span>Mar 2024 - Ongoing</span>
+          <span>Jun 2026 - Ongoing</span>
         </div>
         <div class="timeline-content">
-          <h3>Student Research Assistant</h3>
-          <p><a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a> - Berlin</p>
+          <h3>Research Scientist Intern</h3>
+          <p><i class="fas fa-location-dot"></i> <a href="https://research.ibm.com/labs/zurich" target="_blank">IBM
+              Research</a>, Zürich</p>
           <ul>
-            <li>Key contributor to "Quantum Optimization Benchmarking Library – The Intractable Decathlon" project</li>
-            <li>Implemented and analyzed classical baselines for optimization algorithm benchmarking</li>
-            <li>Collaborated with IBM and international research partners</li>
-            <li>Participated in IBM internal workshop in Liverpool for future research planning</li>
+            <li>Research internship at IBM Research Europe – Zürich</li>
           </ul>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-date">
-          <span>Jul 2020 - Ongoing</span>
+          <span>Mar 2024 - May 2026</span>
         </div>
         <div class="timeline-content">
-          <h3>CEO</h3>
-          <p><a href="https://alster-systems.de/" target="_blank">Alster Systems UG (haftungsbeschränkt)</a> -
-            Kaltenkirchen</p>
+          <h3>Student Research Assistant</h3>
+          <p><i class="fas fa-location-dot"></i> <a href="https://www.zib.de/" target="_blank">Zuse Institute
+              Berlin</a>, Berlin</p>
           <ul>
-            <li>Managing customer and employee relations</li>
-            <li>Front-End development of digital class register software for schools</li>
-            <li>Managing accounting and finance</li>
-            <li>Led integration process at multiple schools in Henstedt-Ulzburg region</li>
+            <li>Key contributor to "Quantum Optimization Benchmarking Library – The Intractable Decathlon" project</li>
+            <li>Implemented and analyzed classical baselines for optimization algorithm benchmarking</li>
+            <li>Collaborated with IBM and international research partners</li>
           </ul>
         </div>
       </div>
@@ -138,11 +202,29 @@
         </div>
         <div class="timeline-content">
           <h3>Research Assistant</h3>
-          <p><a href="https://www.nus.edu.sg/" target="_blank">National University of Singapore</a> - Singapore</p>
+          <p><i class="fas fa-location-dot"></i> <a href="https://www.nus.edu.sg/" target="_blank">National University
+              of Singapore</a>, Singapore</p>
           <ul>
             <li>Developed and applied Optimal Decision Trees for modeling complex financial relationships</li>
             <li>Applied optimization techniques in financial contexts</li>
             <li>Presented preliminary results at MODAL Berlin Algorithmic Intelligence Workshop 2025</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item ongoing-item">
+        <div class="timeline-date">
+          <span>Jul 2020 - Ongoing</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Founder & CEO</h3>
+          <p><i class="fas fa-location-dot"></i> <a href="https://alster-systems.de/" target="_blank">Alster Systems UG
+              (haftungsbeschränkt)</a>, Kaltenkirchen</p>
+          <ul>
+            <li>Founded a software company at age 17, growing it from idea to deployed product</li>
+            <li>Brought a digital class register to market, deploying it at multiple schools in the Henstedt-Ulzburg
+              region</li>
+            <li>Managed all business operations: strategy, customer relations, hiring, and accounting</li>
           </ul>
         </div>
       </div>
@@ -154,13 +236,28 @@
     <h2>Education</h2>
 
     <div class="timeline-container">
+      <div class="timeline-item ongoing-item">
+        <div class="timeline-date">
+          <span>Sep 2026 - Ongoing</span>
+        </div>
+        <div class="timeline-content">
+          <h3>PhD Student</h3>
+          <p><i class="fas fa-location-dot"></i> <a href="https://www.zib.de/" target="_blank">Zuse Institute
+              Berlin</a>, Berlin</p>
+          <ul>
+            <li>Research in optimization and algorithms</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="timeline-item">
         <div class="timeline-date">
-          <span>Sep 2023 - Present</span>
+          <span>Sep 2023 - May 2026</span>
         </div>
         <div class="timeline-content">
           <h3>Master of Science in Mathematics</h3>
-          <p><a href="https://www.tu.berlin/" target="_blank">Technische Universität Berlin</a> - Berlin</p>
+          <p><i class="fas fa-location-dot"></i> <a href="https://www.tu.berlin/" target="_blank">Technische Universität
+              Berlin</a>, Berlin</p>
           <ul>
             <li>Specialization in Algorithms and Discrete Mathematics</li>
             <li>Focus on Optimization Theory and Computational Methods</li>
@@ -174,7 +271,8 @@
         </div>
         <div class="timeline-content">
           <h3>Bachelor of Science in Mathematics</h3>
-          <p><a href="https://www.tu.berlin/" target="_blank">Technische Universität Berlin</a> - Berlin</p>
+          <p><i class="fas fa-location-dot"></i> <a href="https://www.tu.berlin/" target="_blank">Technische Universität
+              Berlin</a>, Berlin</p>
           <ul>
             <li>Specialization in Algorithms and Discrete Mathematics</li>
             <li>Bachelor Thesis: "Competitive Algorithms for Non-Clairvoyant Scheduling with Lossy Preemption" (Grade:
@@ -191,8 +289,8 @@
         </div>
         <div class="timeline-content">
           <h3>Abitur (University Entrance Qualification)</h3>
-          <p><a href="https://alstergymnasium.de/" target="_blank">Alstergymnasium Henstedt-Ulzburg</a> -
-            Henstedt-Ulzburg</p>
+          <p><i class="fas fa-location-dot"></i> <a href="https://alstergymnasium.de/" target="_blank">Alstergymnasium
+              Henstedt-Ulzburg</a>, Henstedt-Ulzburg</p>
           <ul>
             <li>Physics Profile</li>
             <li>Overall Grade: 1.5</li>
@@ -205,34 +303,35 @@
 
   <!-- Publications Section -->
   <section id="publications" class="publications-section">
-    <h2>Publications & Research</h2>
+    <h2>Publications</h2>
+
+    <div class="featured-publication">
+      <span class="featured-badge"><i class="fas fa-star"></i> Nature Computational Science · 2026</span>
+      <h3>The Quantum Optimization Benchmarking Library</h3>
+      <p class="publication-authors">Thorsten Koch, David E. Bernal Neira, Ying Chen, Giorgio Cortiana, Daniel J.
+        Egger, Raoul Heese, Narendra N. Hegade, Alejandro Gomez Cadavid, Rhea Huang, Toshinari Itoko, Thomas Kleinert,
+        Pedro Maciel Xavier, Naeimeh Mohseni, Jhon A. Montanez-Barrera, Koji Nakano, Giacomo Nannicini, Corey O'Meara,
+        Justin Pauckert, Manuel Proissl, Anurag Ramesh, <strong>Maximilian Schicker</strong>, Noriaki Shimada,
+        Mitsuharu Takeori, Victor Valls, David Van Bulck, Stefan Woerner, and Christa Zoufal</p>
+      <p class="publication-description">
+        A comprehensive benchmarking library for optimization algorithms, creating a "decathlon" for optimization
+        methods with realistic benchmarks on particularly hard combinatorial problems. The project involves systematic
+        analysis and comparison of modern optimization methods across a broad collection of challenging problems, in
+        collaboration with IBM and international research partners.
+      </p>
+      <div class="publication-links">
+        <a href="https://doi.org/10.1038/s43588-026-00991-1" target="_blank" class="btn-small">Published in Nature</a>
+        <a href="https://arxiv.org/abs/2504.03832" target="_blank" class="btn-small">Preprint on arXiv</a>
+        <a href="https://github.com/ZIB-AOPT/QOBLIB" target="_blank" class="btn-small">GitHub Repository</a>
+      </div>
+    </div>
 
     <div class="publication-list">
       <div class="publication-item">
-        <h3>Quantum Optimization Benchmarking Library – The Intractable Decathlon</h3>
-        <p class="publication-authors">Thorsten Koch, David E. Bernal Neira, Ying Chen, Giorgio Cortiana, Daniel J.
-          Egger, Raoul Heese, Narendra N. Hegade, Alejandro Gomez Cadavid, Rhea Huang, Toshinari Itoko, Thomas Kleinert,
-          Pedro Maciel Xavier, Naeimeh Mohseni, Jhon A. Montanez-Barrera, Koji Nakano, Giacomo Nannicini, Corey O'Meara,
-          Justin Pauckert, Manuel Proissl, Anurag Ramesh, <strong>Maximilian Schicker</strong>, Noriaki Shimada,
-          Mitsuharu Takeori, Victor Valls, David Van Bulck, Stefan Woerner, and Christa Zoufal</p>
-        <p class="publication-venue">arXiv preprint, 2025</p>
-        <p class="publication-description">
-          A comprehensive benchmarking library for optimization algorithms, creating a "decathlon" for optimization
-          methods with realistic benchmarks on particularly hard combinatorial problems. The project involves systematic
-          analysis and comparison of modern optimization methods across a broad collection of challenging problems, in
-          collaboration with IBM and international research partners.
-        </p>
-        <div class="publication-links">
-          <a href="https://arxiv.org/abs/2504.03832" target="_blank" class="btn-small">Preprint on arXiv</a>
-          <a href="https://github.com/ZIB-AOPT/QOBLIB" target="_blank" class="btn-small">GitHub Repository</a>
-        </div>
-      </div>
-
-      <div class="publication-item">
         <h3>Bachelor Thesis: Competitive Algorithms for Non-Clairvoyant Scheduling with Lossy Preemption</h3>
         <p class="publication-authors">Maximilian Schicker</p>
-        <p class="publication-venue"><a href="https://www.tu.berlin/" target="_blank">Technische Universität Berlin</a>,
-          2023</p>
+        <p class="publication-venue"><i class="fas fa-graduation-cap"></i> <a href="https://www.tu.berlin/"
+            target="_blank">Technische Universität Berlin</a>&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i> 2023</p>
         <p class="publication-description">
           Analysis and development of competitive algorithms for scheduling problems where job durations are unknown and
           preemption incurs cost. Thesis completed under the supervision of Prof. Dr. Max Klimm. Achieved grade 1.0.
@@ -245,42 +344,53 @@
   <section id="conferences" class="conferences-section">
     <h2>Conferences & Workshops</h2>
 
-    <div class="publication-list">
-      <div class="publication-item">
-        <h3>MODAL Berlin Algorithmic Intelligence Workshop 2025</h3>
-        <p class="publication-venue"><a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a>, June 2025
+    <div class="conference-grid">
+      <div class="conference-card">
+        <h3>Quantum Optimization Working Group Meeting 2026</h3>
+        <p class="conference-venue"><i class="fas fa-location-dot"></i> IBM & <a href="https://www.cvut.cz/en"
+            target="_blank">Czech Technical University Prague</a>&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i> June
+          2026</p>
+        <p class="conference-description">
+          Participated in IBM's in-person workshop on quantum optimization research, held at the Czech Technical
+          University (CTU) in Prague. Engaged with international collaborators on ongoing and future research directions
+          in quantum optimization.
         </p>
-        <p class="publication-description">
+      </div>
+
+      <div class="conference-card">
+        <h3>MODAL Berlin Algorithmic Intelligence Workshop 2025</h3>
+        <p class="conference-venue"><i class="fas fa-location-dot"></i> <a href="https://www.zib.de/"
+            target="_blank">Zuse Institute Berlin</a>&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i> June 2025</p>
+        <p class="conference-description">
           Presented preliminary research results on Optimal Decision Trees in financial optimization. Engaged in
           scientific discussions leading to new ideas and potential collaborations.
         </p>
-        <div class="publication-links">
+        <div class="conference-links">
           <a href="https://zib.de/other/ai2025workshop/" target="_blank" class="btn-small">Workshop Website</a>
         </div>
       </div>
 
-      <div class="publication-item">
+      <div class="conference-card">
         <h3>Quantum Optimization Working Group Meeting 2025</h3>
-        <p class="publication-venue">IBM & <a href="https://www.liverpool.ac.uk/" target="_blank">University of
-            Liverpool</a>, April 2025</p>
-        <p class="publication-description">
+        <p class="conference-venue"><i class="fas fa-location-dot"></i> IBM & <a href="https://www.liverpool.ac.uk/"
+            target="_blank">University of Liverpool</a>&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i> April 2025</p>
+        <p class="conference-description">
           Participated in IBM's internal workshop focused on developing new ideas for upcoming research projects in
           quantum optimization. Gained valuable insights into scientific collaboration and established new contacts in
           the research community.
         </p>
       </div>
 
-      <div class="publication-item">
+      <div class="conference-card">
         <h3>CO@Work 2024 Summer School</h3>
-        <p class="publication-venue"><a href="https://www.zib.de/" target="_blank">Zuse Institute Berlin</a>, Summer
-          2024</p>
-        <p class="publication-description">
+        <p class="conference-venue"><i class="fas fa-location-dot"></i> <a href="https://www.zib.de/"
+            target="_blank">Zuse Institute Berlin</a>&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i> Summer 2024</p>
+        <p class="conference-description">
           Intensive summer school on Combinatorial Optimization with over 40 lectures from renowned researchers from
-          academia and industry.
-          Additionally served as volunteer helper, including photography and participant group coordination during the
-          industry excursion.
+          academia and industry. Also served as volunteer helper, including photography and participant coordination
+          during the industry excursion.
         </p>
-        <div class="publication-links">
+        <div class="conference-links">
           <a href="https://co-at-work.zib.de/" target="_blank" class="btn-small">Summer School Website</a>
         </div>
       </div>
@@ -290,14 +400,12 @@
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <h2>Get In Touch</h2>
-    <p>
-      I'm always interested in discussing research collaborations, optimization problems, or new opportunities in
-      mathematics and software development.
-    </p>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:ml.schicker@outlook.com">ml.schicker@outlook.com</a></p>
-      <p><strong>Location:</strong> Berlin, Germany</p>
-    </div>
+    <p class="contact-tagline">Working on something hard? Let's talk.</p>
+    <p class="contact-sub">Open to research collaborations, optimization challenges, and new opportunities.</p>
+    <a href="mailto:ml.schicker@outlook.com" class="btn contact-btn">
+      <i class="fas fa-envelope"></i> ml.schicker@outlook.com
+    </a>
+    <p class="contact-location"><i class="fas fa-location-dot"></i> Berlin, Germany</p>
   </section>
 
   <div class="contact-container">
@@ -324,7 +432,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 - YEAR Maximilian Schicker. All Rights Reserved.</p>
+    <p>© YEAR Maximilian Schicker</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -369,6 +477,123 @@
         themeIcon.classList.add('fa-moon');
       }
     }
+
+    // Network graph hero background
+    (function () {
+      const canvas = document.getElementById('hero-bg');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const NUM_NODES = 48;
+      const CONNECT_DIST = 145;
+      const SPEED = 0.28;
+      let nodes = [];
+      let animId = null;
+      let accentColor = getComputedStyle(document.documentElement)
+        .getPropertyValue('--accent-color').trim() || '#0D9488';
+
+      new MutationObserver(() => {
+        accentColor = getComputedStyle(document.documentElement)
+          .getPropertyValue('--accent-color').trim() || '#0D9488';
+      }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+      function init() {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+        nodes = Array.from({ length: NUM_NODES }, () => ({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * SPEED,
+          vy: (Math.random() - 0.5) * SPEED,
+        }));
+      }
+
+      function frame() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x;
+            const dy = nodes[i].y - nodes[j].y;
+            const d = Math.hypot(dx, dy);
+            if (d < CONNECT_DIST) {
+              ctx.save();
+              ctx.globalAlpha = (1 - d / CONNECT_DIST) * 0.18;
+              ctx.strokeStyle = accentColor;
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(nodes[i].x, nodes[i].y);
+              ctx.lineTo(nodes[j].x, nodes[j].y);
+              ctx.stroke();
+              ctx.restore();
+            }
+          }
+        }
+        ctx.save();
+        ctx.fillStyle = accentColor;
+        ctx.globalAlpha = 0.45;
+        nodes.forEach(n => {
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, 2.5, 0, Math.PI * 2);
+          ctx.fill();
+          n.x += n.vx;
+          n.y += n.vy;
+          if (n.x < 0 || n.x > canvas.width) n.vx *= -1;
+          if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
+        });
+        ctx.restore();
+        animId = requestAnimationFrame(frame);
+      }
+
+      new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          if (!animId) frame();
+        } else {
+          cancelAnimationFrame(animId);
+          animId = null;
+        }
+      }, { threshold: 0 }).observe(canvas.parentElement);
+
+      window.addEventListener('resize', () => {
+        init();
+      });
+
+      init();
+      frame();
+    })();
+
+    // Scroll spy — highlight active nav link
+    (function () {
+      const spyLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+      const spySections = Array.from(spyLinks)
+        .map(l => document.querySelector(l.getAttribute('href')))
+        .filter(Boolean);
+
+      const spyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            spyLinks.forEach(l => l.classList.remove('active'));
+            const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+            if (link) link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-70px 0px -65% 0px', threshold: 0 });
+
+      spySections.forEach(s => spyObserver.observe(s));
+    })();
+
+    // Scroll fade-in
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('section:not(#hero)').forEach(el => {
+      el.classList.add('fade-in');
+      fadeObserver.observe(el);
+    });
   </script>
 
 </body>

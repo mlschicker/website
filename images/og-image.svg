@@ -1,0 +1,79 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Covers the text area cleanly, fades to reveal the network on the right -->
+    <linearGradient id="leftfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#111111" stop-opacity="1"/>
+      <stop offset="53%" stop-color="#111111" stop-opacity="1"/>
+      <stop offset="68%" stop-color="#111111" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Soft teal glow behind the network -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#0CCCB8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0CCCB8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#111111"/>
+
+  <!-- Network glow -->
+  <ellipse cx="980" cy="315" rx="320" ry="280" fill="url(#glow)"/>
+
+  <!-- Network edges -->
+  <g stroke="#0CCCB8" stroke-width="1.5" opacity="0.22">
+    <line x1="730" y1="300" x2="830" y2="155"/>
+    <line x1="830" y1="155" x2="960" y2="315"/>
+    <line x1="830" y1="155" x2="1090" y2="155"/>
+    <line x1="1090" y1="155" x2="960" y2="315"/>
+    <line x1="1090" y1="155" x2="1140" y2="360"/>
+    <line x1="1140" y1="360" x2="960" y2="315"/>
+    <line x1="1140" y1="360" x2="1000" y2="510"/>
+    <line x1="1000" y1="510" x2="960" y2="315"/>
+    <line x1="1000" y1="510" x2="780"  y2="490"/>
+    <line x1="780"  y1="490" x2="960" y2="315"/>
+    <line x1="780"  y1="490" x2="730" y2="300"/>
+    <line x1="730"  y1="300" x2="960" y2="315"/>
+    <line x1="900"  y1="85"  x2="830" y2="155"/>
+    <line x1="900"  y1="85"  x2="1090" y2="155"/>
+    <line x1="1070" y1="235" x2="1090" y2="155"/>
+    <line x1="1070" y1="235" x2="1140" y2="360"/>
+    <line x1="1070" y1="235" x2="960"  y2="315"/>
+    <line x1="875"  y1="430" x2="780"  y2="490"/>
+    <line x1="875"  y1="430" x2="1000" y2="510"/>
+    <line x1="875"  y1="430" x2="960"  y2="315"/>
+  </g>
+
+  <!-- Network nodes -->
+  <g fill="#0CCCB8">
+    <circle cx="960"  cy="315" r="8"   opacity="0.85"/>
+    <circle cx="830"  cy="155" r="5.5" opacity="0.70"/>
+    <circle cx="1090" cy="155" r="5.5" opacity="0.70"/>
+    <circle cx="1140" cy="360" r="5.5" opacity="0.70"/>
+    <circle cx="1000" cy="510" r="5.5" opacity="0.70"/>
+    <circle cx="780"  cy="490" r="5.5" opacity="0.70"/>
+    <circle cx="730"  cy="300" r="5.5" opacity="0.70"/>
+    <circle cx="900"  cy="85"  r="3.5" opacity="0.50"/>
+    <circle cx="1070" cy="235" r="3.5" opacity="0.50"/>
+    <circle cx="875"  cy="430" r="3.5" opacity="0.50"/>
+  </g>
+
+  <!-- Fade overlay: keeps text area clean -->
+  <rect width="1200" height="630" fill="url(#leftfade)"/>
+
+  <!-- Name -->
+  <text x="80" y="188" font-family="Georgia,'Times New Roman',serif" font-size="76" font-weight="400" fill="#EEEEEE" letter-spacing="-1">Maximilian</text>
+  <text x="80" y="272" font-family="Georgia,'Times New Roman',serif" font-size="76" font-weight="400" fill="#EEEEEE" letter-spacing="-1">Schicker</text>
+
+  <!-- Teal separator -->
+  <rect x="80" y="296" width="80" height="3" fill="#0CCCB8" rx="1.5"/>
+
+  <!-- Role -->
+  <text x="80" y="352" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#0CCCB8" letter-spacing="3">PHD RESEARCHER</text>
+
+
+  <!-- Field -->
+  <text x="80" y="458" font-family="Georgia,'Times New Roman',serif" font-size="30" font-style="italic" fill="#BBBBBB">Optimization &amp; Algorithms</text>
+
+  <!-- Domain -->
+  <text x="80" y="572" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#555555" letter-spacing="1.5">schicker.org</text>
+</svg>
